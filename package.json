@@ -1,0 +1,43 @@
+{
+  "name": "react-frontend-boilerplate-penguin",
+  "version": "1.0.0",
+  "description": "A template for React Frontends",
+  "main": "index.js",
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development parcel ./app/index.html",
+    "build": "npm run clean && cross-env NODE_ENV=production parcel build ./app/index.html -d ./build",
+    "clean": "rimraf ./build ./dist"
+  },
+  "author": "Daniel Gacitua",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^8.5.2",
+    "babel-preset-react-app": "^3.1.1",
+    "cross-env": "^5.1.6",
+    "parcel-bundler": "^1.8.1",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/react-fontawesome": "0.0.20",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.3.1",
+    "react": "^16.4.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.0"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  }
+}
